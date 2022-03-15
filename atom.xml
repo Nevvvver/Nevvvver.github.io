@@ -6,7 +6,7 @@
   <link href="http://nevvvver.github.io/atom.xml" rel="self"/>
   
   <link href="http://nevvvver.github.io/"/>
-  <updated>2022-03-09T09:35:39.288Z</updated>
+  <updated>2022-03-15T16:09:02.657Z</updated>
   <id>http://nevvvver.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>可枚举性(enumerable)</title>
+    <link href="http://nevvvver.github.io/2022/03/15/enumerable/"/>
+    <id>http://nevvvver.github.io/2022/03/15/enumerable/</id>
+    <published>2022-03-14T18:53:58.000Z</published>
+    <updated>2022-03-15T16:09:02.657Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h3><ul><li><p>在 JavaScript 中，对象的属性可以分为<strong>实例属性</strong>和<strong>原型 (prototype) 属性</strong>。</p><ul><li>实例属性：指的是自身属性。</li><li>原型属性：指的是从原型链上继承的属性。</li><li><code>Object.prototype.hasOwnProperty()</code> 可以判断某一个属性是否是对象的自身属性。</li></ul></li><li><p>对象的每一个属性都有一个<strong>描述对象 (Descriptor)</strong> ,描述对象的 <strong>enumerable</strong> 属性称为“可枚举性”。</p></li><li><p>引入“可枚举性”这个概念的最初目的，就是让某些属性可以规避掉 <code>for...in</code> 操作。</p></li></ul><h3 id="可枚举性的作用"><a href="#可枚举性的作用" class="headerlink" title="可枚举性的作用"></a>可枚举性的作用</h3><p>与可枚举性有关的操作：</p><table><thead><tr><th>函数方法</th><th>描述</th><th align="center">实例属性</th><th align="center">原型属性</th></tr></thead><tbody><tr><td><code>for...in</code></td><td>遍历对象自身和原型上的所有<strong>可枚举</strong>属性</td><td align="center">〇</td><td align="center">〇</td></tr><tr><td><code>Object.keys()</code></td><td>返回对象自身的所有<strong>可枚举</strong>属性的键名</td><td align="center">〇</td><td align="center"></td></tr><tr><td><code>JSON.stringify</code></td><td>只串行化对象自身的所有<strong>可枚举</strong>属性</td><td align="center">〇</td><td align="center"></td></tr><tr><td><code>Object.assign()</code>(ES6)</td><td>只拷贝对象自身的所有<strong>可枚举</strong>属性</td><td align="center">〇</td><td align="center"></td></tr><tr><td><code>Object.getOwnPropertyNames()</code></td><td>返回对象自身的<strong>所有属性</strong>的键名</td><td align="center">〇</td><td align="center"></td></tr></tbody></table><h4 id="code-samples"><a href="#code-samples" class="headerlink" title="code samples"></a>code samples</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Person</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;Never&quot;</span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过直接的赋值和属性初始化的属性，可枚举性默认为true</span></span><br><span class="line"><span class="title class_">Person</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">School</span> = <span class="string">&#x27;Tust&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> person = <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过 Object.defineProperty() 等定义的属性，可枚举性默认为false</span></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">defineProperty</span>(person, <span class="string">&quot;sex&quot;</span>, &#123;</span><br><span class="line">    <span class="attr">value</span>: <span class="string">&quot;male&quot;</span>,</span><br><span class="line">    <span class="comment">// enumerable: false</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="title class_">Object</span>.<span class="title function_">keys</span>(person).<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">key</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(key) <span class="comment">// name</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">var</span> p <span class="keyword">in</span> person)&#123;</span><br><span class="line">　　<span class="variable language_">console</span>.<span class="title function_">log</span>(p); <span class="comment">// name, School</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title class_">Object</span>.<span class="title function_">getOwnPropertyNames</span>(person).<span class="title function_">forEach</span>(<span class="keyword">function</span>(<span class="params">key</span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(key)<span class="comment">// name, sex</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="如何判断属性是否可枚举"><a href="#如何判断属性是否可枚举" class="headerlink" title="如何判断属性是否可枚举"></a>如何判断属性是否可枚举</h3><ul><li><code>Object.propertyIsEnumerable()</code> 方法可以判断一个属性是否是对象的<strong>可枚举的自身属性</strong>。（注：如果判断的属性是原型属性，不管它是否可枚举都会返回false）</li></ul><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">person.<span class="title function_">propertyIsEnumerable</span>(<span class="string">&#x27;name&#x27;</span>); <span class="comment">// true</span></span><br><span class="line">person.<span class="title function_">propertyIsEnumerable</span>(<span class="string">&#x27;School&#x27;</span>); <span class="comment">// false</span></span><br><span class="line">person.<span class="title function_">propertyIsEnumerable</span>(<span class="string">&#x27;sex&#x27;</span>); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;描述&quot;&gt;&lt;a href=&quot;#描述&quot; class=&quot;headerlink&quot; title=&quot;描述&quot;&gt;&lt;/a&gt;描述&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;在 JavaScript 中，对象的属性可以分为&lt;strong&gt;实例属性&lt;/strong&gt;和&lt;strong&gt;原型 (pro</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://nevvvver.github.io/categories/JavaScript/"/>
+    
+    
+    <category term="javascript" scheme="http://nevvvver.github.io/tags/javascript/"/>
+    
+    <category term="es6" scheme="http://nevvvver.github.io/tags/es6/"/>
+    
+  </entry>
   
   <entry>
     <title>testcomment</title>
