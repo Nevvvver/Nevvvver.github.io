@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://nevvvver.github.io/2022/06/07/jsoneditor-react%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/</loc>
+    
+    <lastmod>2022-06-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://nevvvver.github.io/2022/03/15/enumerable/</loc>
     
     <lastmod>2022-03-15</lastmod>
@@ -40,7 +49,7 @@
 
   <url>
     <loc>http://nevvvver.github.io/</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -48,14 +57,14 @@
   
   <url>
     <loc>http://nevvvver.github.io/tags/javascript/</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://nevvvver.github.io/tags/es6/</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -64,7 +73,14 @@
   
   <url>
     <loc>http://nevvvver.github.io/categories/JavaScript/</loc>
-    <lastmod>2022-03-15</lastmod>
+    <lastmod>2022-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://nevvvver.github.io/categories/TypeScript/</loc>
+    <lastmod>2022-06-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
