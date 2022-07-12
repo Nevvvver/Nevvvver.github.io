@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://nevvvver.github.io/2022/07/11/JavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97/</loc>
+    
+    <lastmod>2022-07-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://nevvvver.github.io/2022/06/10/useReducer-useContext/</loc>
     
     <lastmod>2022-07-11</lastmod>
@@ -58,7 +67,7 @@
 
   <url>
     <loc>http://nevvvver.github.io/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,42 +75,42 @@
   
   <url>
     <loc>http://nevvvver.github.io/tags/javascript/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://nevvvver.github.io/tags/es6/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://nevvvver.github.io/tags/react/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://nevvvver.github.io/tags/context/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://nevvvver.github.io/tags/reducer/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://nevvvver.github.io/tags/hooks/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -110,21 +119,28 @@
   
   <url>
     <loc>http://nevvvver.github.io/categories/JavaScript/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://nevvvver.github.io/categories/TypeScript/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://nevvvver.github.io/categories/React/</loc>
-    <lastmod>2022-07-11</lastmod>
+    <lastmod>2022-07-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://nevvvver.github.io/categories/Books/</loc>
+    <lastmod>2022-07-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
