@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000" />
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top" />
+  
+  
+  <title>jsoneditor-react的类型声明文件 | Never</title>
+  <meta name="description" content="jsoneditor-react.d.ts放在src下 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475declare module &amp;#x27;jsoneditor">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jsoneditor-react的类型声明文件">
+<meta property="og:url" content="http://nevvvver.github.io/2022/06/07/jsoneditor-react%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/index.html">
+<meta property="og:site_name" content="Never">
+<meta property="og:description" content="jsoneditor-react.d.ts放在src下 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475declare module &amp;#x27;jsoneditor">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-06-07T09:25:44.000Z">
+<meta property="article:modified_time" content="2022-06-07T09:46:02.848Z">
+<meta property="article:author" content="Never">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="es6">
+<meta name="twitter:card" content="summary">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://nevvvver.github.io/2022/06/07/jsoneditor-react%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/index.html">
+  
+    <link rel="alternate" href="/atom.xml" title="Never" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.jpg" type="image/x-icon">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  
+  
+  
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+
+<script src="/js/hexo_resize_image.js"></script>
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/Nevvvver" target="_blank">
+          <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">Never</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Sunday painter</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shanghai, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="搜索" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="想要查找什么..." x-webkit-speech />
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
+</div>
+
+
+
+    <a onclick="Chatra('openChat', true);">Chat3</a>
+  
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav menu-highlight">
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/.">
+            
+            <i class="icon icon-home-fill"></i>
+            
+            <span class="menu-title">首页</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives">
+            
+            <i class="icon icon-archives-fill"></i>
+            
+            <span class="menu-title">归档</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories">
+            
+            <i class="icon icon-folder"></i>
+            
+            <span class="menu-title">分类</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags">
+            
+            <i class="icon icon-tags"></i>
+            
+            <span class="menu-title">标签</span>
+          </a>
+        </li>
+        
+      </ul>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/Nevvvver" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+    </ul>
+
+    </nav>
+  </div>
+</header>
+
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">公告</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Books/">Books</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/JavaScript/">JavaScript</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/React/">React</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TypeScript/">TypeScript</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/context/" rel="tag">context</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/es6/" rel="tag">es6</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hooks/" rel="tag">hooks</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/" rel="tag">node</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/" rel="tag">react</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/reducer/" rel="tag">reducer</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/context/" style="font-size: 13px;">context</a> <a href="/tags/es6/" style="font-size: 13.5px;">es6</a> <a href="/tags/hooks/" style="font-size: 13px;">hooks</a> <a href="/tags/javascript/" style="font-size: 14px;">javascript</a> <a href="/tags/node/" style="font-size: 13px;">node</a> <a href="/tags/react/" style="font-size: 13px;">react</a> <a href="/tags/reducer/" style="font-size: 13px;">reducer</a>
+    </div>
+  </div>
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">七月 2022</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/06/">六月 2022</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2022/07/18/hexo%E4%B8%AD%E6%8E%A5%E5%85%A5chatwoot%E5%AE%9E%E6%97%B6%E8%81%8A%E5%A4%A9/" class="title">hexo中接入chatwoot实时聊天</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-07-18T07:58:35.000Z" itemprop="datePublished">2022-07-18</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Books/">Books</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/07/13/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANodeJS/" class="title">《深入浅出Node.js》笔记</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-07-13T09:35:49.000Z" itemprop="datePublished">2022-07-13</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/Books/">Books</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/07/11/JavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97/" class="title">《JavaScript权威指南(第6版)》笔记</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-07-11T09:27:54.000Z" itemprop="datePublished">2022-07-11</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/React/">React</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/10/useReducer-useContext/" class="title">useReducer+useContext</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-10T03:08:02.000Z" itemprop="datePublished">2022-06-10</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                <a class="category-link" href="/categories/TypeScript/">TypeScript</a>
+              </p>
+              <p class="item-title">
+                <a href="/2022/06/07/jsoneditor-react%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/" class="title">jsoneditor-react的类型声明文件</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2022-06-07T09:25:44.000Z" itemprop="datePublished">2022-06-07</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</aside>
+
+  
+  
+  <aside class="sidebar sidebar-toc collapse   in  " id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <nav id="toc" class="article-toc">
+      <h3 class="toc-title">文章目录</h3>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#jsoneditor-react-d-ts"><span class="toc-number">1.</span> <span class="toc-text">jsoneditor-react.d.ts</span></a></li></ol>
+    </nav>
+  </div>
+</aside>
+
+<main class="main" role="main">
+  <div class="content">
+  <article id="post-jsoneditor-react的类型声明文件" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
+  
+    <h1 class="article-title" itemprop="name">
+      jsoneditor-react的类型声明文件
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2022/06/07/jsoneditor-react%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/" class="article-date">
+	  <time datetime="2022-06-07T09:25:44.000Z" itemprop="datePublished">2022-06-07</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/TypeScript/">TypeScript</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/es6/" rel="tag">es6</a>, <a class="article-tag-link-link" href="/tags/javascript/" rel="tag">javascript</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2022/06/07/jsoneditor-react%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/#comments" class="article-comment-link">评论</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h3 id="jsoneditor-react-d-ts"><a href="#jsoneditor-react-d-ts" class="headerlink" title="jsoneditor-react.d.ts"></a>jsoneditor-react.d.ts</h3><p>放在src下</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line">declare <span class="variable language_">module</span> <span class="string">&#x27;jsoneditor-react&#x27;</span> &#123;</span><br><span class="line">  <span class="keyword">export</span> <span class="keyword">class</span> <span class="title class_">JsonEditor</span> <span class="keyword">extends</span> <span class="title class_ inherited__">React.Component</span>&lt;<span class="title class_">JsonEditorProps</span>&gt; &#123;</span><br><span class="line">    public <span class="attr">jsonEditor</span>: unknown;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">    type <span class="title class_">Mode</span> = <span class="string">&#x27;tree&#x27;</span> | <span class="string">&#x27;view&#x27;</span> | <span class="string">&#x27;form&#x27;</span> | <span class="string">&#x27;code&#x27;</span> | <span class="string">&#x27;text&#x27;</span>;</span><br><span class="line"></span><br><span class="line">    interface <span class="title class_">JsonEditorProps</span> &#123;</span><br><span class="line">      <span class="attr">value</span>: unknown;</span><br><span class="line">      <span class="comment">/** Set the editor mode. Default &#x27;tree&#x27; */</span></span><br><span class="line">      mode?: <span class="title class_">Mode</span>;</span><br><span class="line">      <span class="comment">/** Initial field name for root node */</span></span><br><span class="line">      name?: string;</span><br><span class="line">      <span class="comment">/** Validate the JSON object against a JSON schema. */</span></span><br><span class="line">      <span class="attr">schema</span>: unknown;</span><br><span class="line">      <span class="comment">/** Schemas that are referenced using the $ref property */</span></span><br><span class="line">      schemaRefs?: object;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * If true, object keys in &#x27;tree&#x27;, &#x27;view&#x27; or &#x27;form&#x27; mode list be listed alphabetically</span></span><br><span class="line"><span class="comment">       * instead by their insertion order.</span></span><br><span class="line"><span class="comment">       *</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      sortObjectKeys?: boolean;</span><br><span class="line"></span><br><span class="line">      <span class="comment">/** Set a callback function triggered when json in the JSONEditor change */</span></span><br><span class="line">      onChange?: <span class="function">(<span class="params">value: object[]</span>) =&gt;</span> <span class="keyword">void</span>;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Set a callback function triggered when an error occurs.</span></span><br><span class="line"><span class="comment">       * Invoked with the error as first argument.</span></span><br><span class="line"><span class="comment">       * The callback is only invoked for errors triggered by a users action,</span></span><br><span class="line"><span class="comment">       * like switching from code mode to tree mode or clicking</span></span><br><span class="line"><span class="comment">       * the Format button whilst the editor doesn&#x27;t contain valid JSON.</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      onError?: <span class="function">(<span class="params">error: unknown</span>) =&gt;</span> <span class="keyword">void</span>;</span><br><span class="line">      <span class="comment">/** Set a callback function triggered right after the mode is changed by the user. */</span></span><br><span class="line">      onModeChange?: <span class="function">(<span class="params">mode: Mode</span>) =&gt;</span> <span class="keyword">void</span>;</span><br><span class="line">      onClassName?: <span class="function">(<span class="params">args: &#123; path: unknown; field: unknown; value: unknown &#125;</span>) =&gt;</span> <span class="keyword">void</span>;</span><br><span class="line"></span><br><span class="line">      <span class="comment">/** Provide a version of the Ace editor. Only applicable when mode is code */</span></span><br><span class="line">      ace?: object;</span><br><span class="line">      <span class="comment">/** Provide a instance of ajv,the library used for JSON schema validation. */</span></span><br><span class="line">      ajv?: object;</span><br><span class="line">      <span class="comment">/** Set the Ace editor theme, uses included &#x27;ace/theme/jsoneditor&#x27; by default. */</span></span><br><span class="line">      theme?: string;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Enables history, adds a button Undo and Redo to the menu of the JSONEditor.</span></span><br><span class="line"><span class="comment">       * Only applicable when mode is &#x27;tree&#x27; or &#x27;form&#x27;. Default to false</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      history?: boolean;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Adds navigation bar to the menu</span></span><br><span class="line"><span class="comment">       * the navigation bar visualize the current position on the</span></span><br><span class="line"><span class="comment">       * tree structure as well as allows breadcrumbs navigation. Default to true</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      navigationBar?: boolean;</span><br><span class="line">      <span class="comment">/**</span></span><br><span class="line"><span class="comment">       * Adds status bar to the buttom of the editor</span></span><br><span class="line"><span class="comment">       * the status bar shows the cursor position and a count of the selected characters.</span></span><br><span class="line"><span class="comment">       * Only applicable when mode is &#x27;code&#x27; or &#x27;text&#x27;. Default to true</span></span><br><span class="line"><span class="comment">       */</span></span><br><span class="line">      statusBar?: boolean;</span><br><span class="line">      <span class="comment">/** Enables a search box in the upper right corner of the JSONEditor. Default to true */</span></span><br><span class="line">      search?: boolean;</span><br><span class="line">      <span class="comment">/** Create a box in the editor menu where the user can switch between the specified modes. */</span></span><br><span class="line">      allowedModes?: <span class="title class_">Mode</span>[];</span><br><span class="line"></span><br><span class="line">      <span class="comment">/** Html element, or react element to render */</span></span><br><span class="line">      tag?: string | <span class="title class_">HTMLElement</span>;</span><br><span class="line">      <span class="comment">/** html element custom props */</span></span><br><span class="line">      htmlElementProps?: object;</span><br><span class="line">      <span class="comment">/** callback to get html element reference */</span></span><br><span class="line">      innerRef?: <span class="function">(<span class="params">ref: unknown</span>) =&gt;</span> <span class="keyword">void</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="http://nevvvver.github.io/2022/06/07/jsoneditor-react%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%A3%B0%E6%98%8E%E6%96%87%E4%BB%B6/" title="jsoneditor-react的类型声明文件" target="_blank" rel="external">http://nevvvver.github.io/2022/06/07/jsoneditor-react的类型声明文件/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/Nevvvver" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/Nevvvver" target="_blank"><span class="text-dark">Never</span><small class="ml-1x">Web Developer &amp; Sunday painter</small></a></h3>
+        <div>Never worried, Never mind.</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
+  
+    
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
+    
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2022/06/10/useReducer-useContext/" title="useReducer+useContext"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2022/03/15/enumerable/" title="可枚举性(enumerable)"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+    <li class="toggle-toc">
+      <a class="toggle-btn " data-toggle="collapse" href="#collapseToc" aria-expanded="false" title="文章目录" role="button">    <span>[&nbsp;</span><span>文章目录</span>
+        <i class="text-collapsed icon icon-anchor"></i>
+        <i class="text-in icon icon-close"></i>
+        <span>]</span>
+      </a>
+    </li>
+    
+  </ul>
+  
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+
+
+</main>
+
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/Nevvvver" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="/null" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
+</footer>
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+
+<script src="/js/plugin.min.js"></script>
+
+
+<script src="/js/application.js"></script>
+
+
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+
+
+
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: 'Ptdp2i9mmWrGF9nq9nbtpgIG-gzGzoHsz',
+    appKey: '7wtwhNMvPTwOwiqlYYsJzCTm',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
+
+
+
+
+
+
+
+</body>
+</html>
