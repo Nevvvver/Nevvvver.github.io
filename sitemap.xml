@@ -49,7 +49,7 @@
 
   <url>
     <loc>https://nevvvver.github.io/</loc>
-    <lastmod>2022-10-10</lastmod>
+    <lastmod>2022-10-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,14 +57,14 @@
   
   <url>
     <loc>https://nevvvver.github.io/tags/javascript/</loc>
-    <lastmod>2022-10-10</lastmod>
+    <lastmod>2022-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://nevvvver.github.io/tags/es6/</loc>
-    <lastmod>2022-10-10</lastmod>
+    <lastmod>2022-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -73,21 +73,21 @@
   
   <url>
     <loc>https://nevvvver.github.io/categories/JavaScript/</loc>
-    <lastmod>2022-10-10</lastmod>
+    <lastmod>2022-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://nevvvver.github.io/categories/Books/</loc>
-    <lastmod>2022-10-10</lastmod>
+    <lastmod>2022-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://nevvvver.github.io/categories/TypeScript/</loc>
-    <lastmod>2022-10-10</lastmod>
+    <lastmod>2022-10-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
