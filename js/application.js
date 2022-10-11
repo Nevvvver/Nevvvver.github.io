@@ -5,7 +5,7 @@ $(function() {
   // slimscroll
   if (typeof $.fn.slimScroll != 'undefined') {
     $(".sidebar .slimContent").slimScroll({
-      height: $(window).height(),
+      height: "100%",
       color: "rgba(0,0,0,0.15)",
       size: "5px",
       position: 'right',
