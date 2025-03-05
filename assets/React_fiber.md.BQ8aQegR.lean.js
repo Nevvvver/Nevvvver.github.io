@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.Dh1jimFm.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"React/fiber.md","filePath":"React/fiber.md"}'),r={name:"React/fiber.md"};function c(o,s,n,i,f,p){return a(),t("div")}const m=e(r,[["render",c]]);export{d as __pageData,m as default};
